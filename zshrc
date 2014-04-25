@@ -34,7 +34,9 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(aws brew pip python vagrant virtualenvwrapper sublime)
 
-source $ZSH/oh-my-zsh.sh
+alias c='pygmentize -O style=manni -f console256 -g'
+
+source "$ZSH/oh-my-zsh.sh"
 source "$HOME/.aws/aws_zsh_completer.sh"
 source "/usr/local/bin/virtualenvwrapper.sh"
 source "$HOME/.tinyclues/zsh.rc"
